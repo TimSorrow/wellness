@@ -18,29 +18,35 @@ const highlights = [
   },
 ]
 
-const heroImage =
-  "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1600&q=80"
+const heroVideo =
+  "https://cdn.pixabay.com/vimeo/459737151/ocean-50435.mp4?width=1280&hash=123f1b0a8e3d6e5d8a8e3d6e5d8a8e3d6e5d8a8e"
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative isolate overflow-hidden">
-      <div className="absolute inset-0">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-60"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-white via-white/90 to-sand-50" />
+    <section id="hero" className="relative isolate overflow-hidden min-h-[90vh] flex items-center">
+      <div className="absolute inset-0 -z-10">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-70"
+        >
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-waves-coming-to-the-shore-seen-from-above-4158-large.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-sand-50/90" />
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-4 py-20 sm:py-24">
+      <div className="relative max-w-6xl mx-auto px-4 py-20 sm:py-24 text-white">
         <div className="pill">Yoga by the ocean • Tenerife</div>
 
         <div className="mt-8 grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display leading-tight text-sage-dark">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display leading-tight text-white">
               Breathe with the Atlantic, ground with the volcano.
             </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl">
+            <p className="text-lg text-white/85 max-w-2xl">
               Ayla leads soulful yoga that blends mindful movement, breathwork, and meditation.
               Whether you want a sunrise beach flow, a private villa class, or a gentle stretch
               after surfing, every session is tailored to your energy.
@@ -56,7 +62,7 @@ export default function Hero() {
               </a>
               <a
                 href="#services"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-border text-sm font-medium text-foreground hover:border-primary/70 hover:text-primary transition"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-white/30 text-sm font-medium text-white hover:border-white/60 hover:text-white transition"
               >
                 View class styles
               </a>
@@ -64,7 +70,7 @@ export default function Hero() {
 
             <div className="grid sm:grid-cols-3 gap-4 pt-2">
               {highlights.map(({ title, description, Icon }) => (
-                <div key={title} className="card p-4">
+                <div key={title} className="card p-4 bg-white/90 backdrop-blur">
                   <div className="flex items-center gap-3">
                     <Icon className="h-5 w-5 text-primary" />
                     <h3 className="text-base font-semibold text-foreground">{title}</h3>
@@ -75,7 +81,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="card relative overflow-hidden p-6 sm:p-8">
+          <div className="card relative overflow-hidden p-6 sm:p-8 bg-white/95 backdrop-blur">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-white to-sand-50/80" />
             <div className="relative space-y-4">
               <div className="pill w-fit">Session focus</div>
