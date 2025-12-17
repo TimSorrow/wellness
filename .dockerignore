@@ -1,0 +1,32 @@
+node_modules
+.next
+out
+build
+dist
+.turbo
+
+# Git
+.git
+.gitignore
+
+# Env & configs
+.env
+.env*.local
+.envrc*
+Dockerfile
+docker-compose.yml
+
+# Editors and tooling
+.vscode
+.idea
+.cursor
+
+# Logs & coverage
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+coverage
+.vercel
+

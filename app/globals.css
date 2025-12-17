@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 32 28% 96%;
+    --foreground: 30 8% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 30 8% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 8% 18%;
+
+    --primary: 188 48% 46%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 16 66% 80%;
+    --secondary-foreground: 24 30% 22%;
+
+    --muted: 30 10% 45%;
+    --muted-foreground: 28 8% 42%;
+
+    --accent: 154 21% 38%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 64% 48%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 28 20% 86%;
+    --input: 28 20% 86%;
+    --ring: 188 48% 46%;
+
+    --radius: 1rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(107, 182, 201, 0.12), transparent 35%),
+      radial-gradient(circle at 80% 10%, rgba(242, 193, 182, 0.18), transparent 35%),
+      radial-gradient(circle at 50% 80%, rgba(108, 140, 116, 0.12), transparent 40%),
+      #f7f3ee;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair), Georgia, serif;
+    @apply text-sage-dark;
+  }
+
+  p {
+    @apply text-muted-foreground;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-3xl shadow-soft-card border border-border/60;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary;
+  }
+}
+
