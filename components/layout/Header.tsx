@@ -13,10 +13,10 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-6">
         <Link
           href="/"
-          className="font-display text-2xl md:text-3xl text-sage-dark tracking-tight"
+          className="font-display text-2xl md:text-3xl text-sage-dark tracking-tight uppercase"
         >
-          Ayla Yoga
-          <span className="ml-2 text-sm font-sans text-muted-foreground">Tenerife</span>
+          Wellness
+          <span className="ml-2 text-sm font-sans text-muted-foreground normal-case">Tenerife</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-foreground">

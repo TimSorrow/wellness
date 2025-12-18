@@ -46,7 +46,7 @@ export default function FooterSection() {
         </div>
 
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-sm text-muted-foreground">
-          <span>© {year} Ayla Yoga. Crafted with ocean breeze in Tenerife.</span>
+          <span>© {year} Wellness. Crafted with ocean breeze in Tenerife.</span>
           <span>Tenerife, Canary Islands</span>
         </div>
       </div>

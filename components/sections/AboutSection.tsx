@@ -23,7 +23,7 @@ export default function AboutSection() {
     <section id="about" className="max-w-6xl mx-auto px-4 py-16 sm:py-20">
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-4">
-          <p className="pill w-fit">About Ayla</p>
+          <p className="pill w-fit">About Wellness</p>
           <h2 className="text-3xl sm:text-4xl font-display text-sage-dark leading-tight">
             Kind, attentive guidance inspired by Tenerife&apos;s calm energy.
           </h2>

@@ -10,11 +10,11 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "Ayla Yoga Tenerife | Private & group classes by the ocean",
+  title: "Wellness Tenerife | Private & group classes by the ocean",
   description:
     "Mindful private and small-group yoga on Tenerife: sunrise beach flows, villa sessions, and guided meditation in English or Russian.",
   keywords: [
-    "Tenerife yoga",
+    "Tenerife wellness",
     "private yoga",
     "beach yoga",
     "meditation",
